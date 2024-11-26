@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
 const User = require("../models/User"); // Assuming User model exists and is set up to interact with your DB
 const Admin=require("../models/Admin")
 
