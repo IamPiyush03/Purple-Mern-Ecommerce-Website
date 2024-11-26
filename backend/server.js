@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.WEBSITE_DOMAIN || "http://localhost:5173",
+  origin: process.env.WEBSITE_DOMAIN || "https://purple-mern-ecommerce-website.vercel.app/",
   allowedHeaders: ["content-type", "Authorization"], // Allow Authorization header for JWT
   credentials: true,
 }));

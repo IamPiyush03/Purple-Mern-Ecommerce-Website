@@ -67,7 +67,7 @@ const AdminDashboard = () => {
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem("adminToken");
-      const response = await axios.get("http://localhost:5000/api/products", {
+      const response = await axios.get("https://purple-mern-ecommerce-website.onrender.com/api/products", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts(Array.isArray(response.data) ? response.data : []);
@@ -96,7 +96,7 @@ const AdminDashboard = () => {
     formData.append("image", productImage);
 
     try {
-      await axios.post("http://localhost:5000/api/products", formData, {
+      await axios.post("https://purple-mern-ecommerce-website.onrender.com/api/products", formData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSuccessMessage("Product added successfully!");
@@ -119,7 +119,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, {
+      await axios.delete(`https://purple-mern-ecommerce-website.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSuccessMessage("Product deleted successfully!");

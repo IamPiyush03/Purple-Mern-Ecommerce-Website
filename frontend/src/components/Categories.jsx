@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Box, Typography, Grid, Button, TextField, CircularProgress, Alert, Slider } from '@mui/material';
 import axios from 'axios';
 
-// Replace this with your backend URL
-const BACKEND_API_URL = "http://localhost:5000/api/products"; 
+const BACKEND_API_URL = "https://purple-mern-ecommerce-website.onrender.com/api/products";
+
 
 const Categories = () => {
   const [products, setProducts] = useState([]);

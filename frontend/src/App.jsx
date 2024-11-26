@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Pages and Components
 import Home from './pages/Home';
 import AdminDashboard from './pages/AdminDashboard';
-import SellerDashboard from './pages/SellerDashboard';
 import Categories from './components/Categories';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -24,7 +23,6 @@ function App() {
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/admin-dashboard" element={<AdminDashboard />} />
-                <Route path="/seller-dashboard" element={<SellerDashboard />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/books" element={<TextBook />} />
                 
