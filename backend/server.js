@@ -15,10 +15,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.WEBSITE_DOMAIN || "https://purple-mern-ecommerce-website.vercel.app/",
-  allowedHeaders: ["content-type", "Authorization"], // Allow Authorization header for JWT
+  origin: process.env.WEBSITE_DOMAIN || "https://purple-mern-ecommerce-website.vercel.app",
+  allowedHeaders: ["content-type", "Authorization"],
   credentials: true,
 }));
+
 app.use(express.json()); // Parse incoming JSON data
 
 // Import Routes
